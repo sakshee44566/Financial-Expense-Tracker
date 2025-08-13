@@ -1,0 +1,145 @@
+/* Graph Component Styling */
+.graphs-container {
+  font-family: 'Poppins', sans-serif;
+}
+
+.graph-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  height: 100%;
+}
+
+.graph-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.graph-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  color: white;
+  padding: 15px 20px;
+  border-bottom: none;
+}
+
+.graph-header h5 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.graph-body {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.chart-container {
+  height: 350px;
+  position: relative;
+}
+
+.no-data {
+  color: #6c757d;
+  font-style: italic;
+  padding: 30px 0;
+}
+
+/* Tab Navigation */
+.graph-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 25px;
+  font-weight: 500;
+  color: #6c757d;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chart-container {
+    height: 300px;
+  }
+  
+  .graph-tabs {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+  }
+  
+  .tab-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* Animation for charts */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chart-container {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Custom tooltip styling */
+.chartjs-tooltip {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom legend styling */
+.chartjs-legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.chartjs-legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.chartjs-legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+} 
