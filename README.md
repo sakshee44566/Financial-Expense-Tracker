@@ -1,5 +1,4 @@
-
-# Expense Management System using MERN Stack
+# Financial-Expense-Tracker
 
 ## Project Description:
 
@@ -78,6 +77,3 @@ Support attaching receipts or other relevant documents to expense entries.
 **Server:** Node, Express
 
 **Database:** MongoDB
-
-
-
